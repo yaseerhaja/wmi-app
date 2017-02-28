@@ -2,13 +2,15 @@
   "name": "wmi-app",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "server.js",
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
-    "e2e": "protractor"
+    "e2e": "protractor",
+	  "build": "ng build && node server.js"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +27,14 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.7.2"
+    "zone.js": "^0.7.2",
+	  "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "express-generator": "^4.13.4",
+    "fs": "0.0.2",
+    "path": "^0.12.7",
+    "request": "^2.73.0",
+    "cookie-parser": "^1.4.3"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",
